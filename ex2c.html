@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+</head>
+<body>
+    <label for="">Entrez un montant</label><input type="text" id="in">
+    <br>
+    <input type="radio" id="dinar" value="dinar" name="devis"> <label for="dinar">dinar</label>
+    <input type="radio" id="euro" value="euro" name="devis"> <label for="euro">euro</label>
+    <input type="radio" id="dollar" value="dollar" name="devis"> <label for="dollar">dollar</label>
+    <br>
+    <button id="but" onclick="return a()"> convertir</button>
+    <br>
+    <label for="">dinar</label><input type="text" id="a">
+    <br>
+    <label for="">euro</label><input type="text" id="b">
+    <br>
+    <label for="">dollar</label><input type="text" id="c">
+    <br>
+    <script>
+        function a()
+        {
+            var x=document.getElementById("in").value;
+            if(document.getElementById("dinar").checked)
+            {
+                document.getElementById("a").value=x;
+                document.getElementById("b").value=x/3.27;
+                document.getElementById("c").value=x/2.88;
+            }
+            if(document.getElementById("dollar").checked)
+            {
+                document.getElementById("a").value=x*2.88;
+                document.getElementById("b").value=x*2.88/3.27;
+                document.getElementById("c").value=x;
+            }
+            if(document.getElementById("euro").checked)
+            {
+                document.getElementById("a").value=x*3.27;
+                document.getElementById("b").value=x;
+                document.getElementById("c").value=(3.27/2.88)*x;         
+            }
+        }
+    </script>
+
+</body>
+</html>

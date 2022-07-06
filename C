@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+  height: 100px;
+  background-color:#B87070;
+  padding: 5px;
+  
+  
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: x-large;
+}
+img{
+    height: 100px;
+    width: 100px;
+    float: left;
+    border: 1px solid black;
+    
+
+}
+nav{
+    width: 10%;
+    border: 1px solid black;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;}
+.Accueil{
+    border-left: 1px solid rgb(153, 99, 99);
+    width: 42%;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.contact{
+    border-left: 1px solid gray;
+    width: 42%;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+footer{
+    height: 50px;
+    text-align: center ;
+    color: black;
+    background-color: #B87070;
+    padding: 5px;
+}
+</style>
+
+<header>
+    <img src="moi.jpg" alt="dhia">
+<h1>Dhia Toukebri</h4>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Formations</a></li>
+        <li><a href="#">Expériences</a></li>
+    </ul>
+</nav>
+<section class="Accueil">
+    <h3>Présentaion</h3>
+    <p>je suis une étudiante en mastére professionel.Je poursais mes études à<br>l'université de sfax</p>
+
+</section>
+<section class="contact">
+    <h3>contact</h3>
+    <p>vous pouvez me conectez sur:</p>
+    <ul>
+        <li>Téléphone:9999999</li>
+        <li>Email:aaaaa@gmail.com</li>
+        <li>Adress:Route gremda km 9.333</li>
+
+    </ul>
+</section>
+<footer>
+    <p>Mise à jour le 26/02/2022</p>
+</footer>
+    
+        
+    
+<body>
+    
+</body>
+</html>

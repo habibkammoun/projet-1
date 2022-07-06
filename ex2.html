@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+    
+</head>
+<body>
+    <script>
+        function calculer()
+        {
+            var x=document.getElementById("a").value;
+            if(document.getElementById("Dinar").checked)
+            {
+                document.getElementById("d").value=x;
+                document.getElementById("e").value=x/3.27;
+                document.getElementById("do").value=x/2.88;
+            }
+            if(document.getElementById("Euro").checked)
+            {
+                document.getElementById("d").value=x*3.27;
+                document.getElementById("e").value=x;
+                document.getElementById("do").value=(3.27/2.88)*x;         
+            }
+            if(document.getElementById("Dollar").checked)
+            {
+                document.getElementById("d").value=x*2.88;
+                document.getElementById("e").value=(2.88/3.27)*x;
+                document.getElementById("do").value=x; 
+            }
+        }
+    </script>
+    <label for="">Entrez un montant</label> <input type="text" id="a" >
+    <br>
+    <br>
+    <input type="radio" id="Dinar" value="Dinar" name="devis"> <label for="Dinar">Dinar Tunisien</label>
+    <input type="radio" id="Euro" value="Euro" name="devis"> <label for="Euro">Euro</label>
+    <input type="radio" id="Dollar" value="Dollar" name="devis"> <label for="Dollar">Dollar</label>
+    <br>
+    <br>
+    <input type="submit" id="convertir" value="convertir" onclick="calculer()">
+    <br><br>
+    <label for="">Dinars Tunisien</label> <input type="text" id="d">
+    <br><br>
+    <label for="">Euros</label> <input type="text" id="e">
+    <br><br>
+    <label for="">Dollars</label> <input type="text" id="do">
+
+
+</body>
+</html>

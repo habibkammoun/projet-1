@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+  
+    <script>
+        var pchemise =60;
+        var pveste =100;
+        var ptshirt=20;
+        function calculer()
+        {
+            var c=document.getElementById("choix").value;
+            var n=document.getElementById("nombre").value;
+            var r=0;
+            if(c=="chemises")
+            {
+                r=pchemise*n;
+                document.getElementById("prix").value=r+"";
+            }
+            if(c=="vestes")
+            {
+                r=pveste*n;
+                document.getElementById("prix").value=r+"";
+            }
+            if(c=="T-shirts")
+            {
+                r=ptshirt*n;
+                document.getElementById("prix").value=r+"";
+            }
+        }
+     
+        document.writeln('<label>choix de l article:</label>');
+        document.writeln('<select id="choix">');
+        document.writeln( '<option value="chemises">chemises</option>')
+        document.writeln( '<option value="vestes">vestes</option>')
+        document.writeln( '<option value="T-shirts">T-shirts</option>')
+        document.writeln('</select>')
+        document.writeln('<br>')
+        document.writeln('<br>')
+        document.writeln('<label>choix du nombre: </label>');
+        document.writeln('<select id="nombre">');
+        document.writeln( '<option value="1">1</option>');
+        document.writeln( '<option value="2">2</option>');
+        document.writeln( '<option value="3">3</option>');
+        document.writeln( '<option value="4">4</option>');
+        document.writeln( '<option value="4">4</option>');
+        document.writeln( '<option value="5">5</option>');
+        document.writeln('</select>');
+        document.writeln('<br>')
+        document.writeln('<br>')
+        document.writeln('<input type="submit" id="a" value="donner le prix" onclick="calculer()">');
+        document.writeln('<br>')
+        document.writeln('<br>')
+        document.writeln('<input type="text" id="prix">')
+     
+        
+    </script>
+    
+</body>
+
+</html>
